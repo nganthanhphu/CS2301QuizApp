@@ -28,6 +28,7 @@ public class Question {
         this.image = builder.image;
         this.cate = builder.cate;
         this.level = builder.level;
+        this.choices = builder.choices;
     }
 
     public static class Builder {
@@ -39,8 +40,7 @@ public class Question {
         private Level level;
         private List<Choice> choices = new ArrayList<>();
         
-        public Builder(int id, String content, Category cate,Level level){
-            this.id = id;
+        public Builder(String content, Category cate,Level level){
             this.content = content;
             this.cate = cate;
             this.level = level;
@@ -66,4 +66,54 @@ public class Question {
         }
     }
 
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @return the content
+     */
+    public String getContent() {
+        return content;
+    }
+
+    /**
+     * @return the hint
+     */
+    public String getHint() {
+        return hint;
+    }
+
+    /**
+     * @return the image
+     */
+    public String getImage() {
+        return image;
+    }
+
+    /**
+     * @return the cate
+     */
+    public Category getCate() {
+        return cate;
+    }
+
+    /**
+     * @return the level
+     */
+    public Level getLevel() {
+        return level;
+    }
+
+    /**
+     * @return the choices
+     */
+    public List<Choice> getChoices() {
+        return choices;
+    }
+    
+    
 }
