@@ -56,7 +56,7 @@ public class Choice {
     /**
      * @return the isCorrect
      */
-    public boolean isIsCorrect() {
+    public boolean isCorrect() {
         return isCorrect;
     }
 

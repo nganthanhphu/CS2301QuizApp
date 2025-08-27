@@ -40,10 +40,17 @@ public class Question {
         private Level level;
         private List<Choice> choices = new ArrayList<>();
         
-        public Builder(String content, Category cate,Level level){
+        public Builder(String content, Category cate,Level level) throws Exception{
+            if(content.isEmpty()||cate == null || level == null)
+                throw new Exception("Du lieu khong hop le!");
             this.content = content;
             this.cate = cate;
             this.level = level;
+        }
+        
+        public Builder(int id, String content){
+            this.id = id;
+            this.content = content;
         }
         
         public Builder addHint(String hint){
@@ -58,6 +65,11 @@ public class Question {
         
         public Builder addChoice(Choice c){
             this.choices.add(c);
+            return this;
+        }
+        
+        public Builder addAllChoices(List<Choice> c){
+            this.choices.addAll(c);
             return this;
         }
         
