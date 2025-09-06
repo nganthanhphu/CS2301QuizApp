@@ -6,7 +6,11 @@ package com.ntp.utils;
 
 import com.ntp.services.CategoryServices;
 import com.ntp.services.LevelServices;
-import com.ntp.services.QuestionServices;
+import com.ntp.services.choice.BaseChoiceServices;
+import com.ntp.services.choice.ChoiceServices;
+import com.ntp.services.question.BaseQuestionServices;
+import com.ntp.services.question.QuestionServices;
+import com.ntp.services.question.UpdateQuestionServices;
 
 /**
  *
@@ -16,5 +20,7 @@ public class Configs {
 
     public static final CategoryServices cateServices = new CategoryServices();
     public static final LevelServices levelServices = new LevelServices();
-    public static final QuestionServices qServices = new QuestionServices();
+    public static final UpdateQuestionServices uQServices = new UpdateQuestionServices();
+    public static final BaseQuestionServices qServices = new QuestionServices();
+    public static final BaseChoiceServices choiceServices = new ChoiceServices();
 }

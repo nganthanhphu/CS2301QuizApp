@@ -42,7 +42,13 @@
       </VBox>
       <Button mnemonicParsing="false" onAction="#handleAddChoice" styleClass="Button" text="Thêm lựa chọn" />
       <Button mnemonicParsing="false" onAction="#handleAddQuestion" styleClass="Button" text="Thêm câu hỏi" />
-      <TextField fx:id="txtSearch" promptText="TÌm kiếm câu hỏi,,," />
+      <HBox styleClass="Main">
+         <children>
+            <TextField fx:id="txtSearch" promptText="TÌm kiếm câu hỏi,,," />
+            <ComboBox fx:id="cbSeachCates" prefWidth="150.0" promptText="Chọn danh mục" />
+            <ComboBox fx:id="cbSearchLevels" prefWidth="150.0" promptText="Chọn mức độ" />
+         </children>
+      </HBox>
       <TableView fx:id="tbQuestions" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </VBox>
