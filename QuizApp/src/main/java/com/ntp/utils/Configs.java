@@ -23,4 +23,7 @@ public class Configs {
     public static final UpdateQuestionServices uQServices = new UpdateQuestionServices();
     public static final BaseQuestionServices qServices = new QuestionServices();
     public static final BaseChoiceServices choiceServices = new ChoiceServices();
+    
+    public static final int NUM_QUES = 10;
+    public static final double[] RATES = {0.4, 0.4 ,0.2};
 }

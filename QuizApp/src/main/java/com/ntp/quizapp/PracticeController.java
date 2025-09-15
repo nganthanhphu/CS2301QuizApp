@@ -41,11 +41,11 @@ public class PracticeController implements Initializable {
     @FXML
     private TextField txtNum;
     @FXML
-    Text txtContent;
+    private Text txtContent;
     @FXML
-    Text txtResult;
+    private Text txtResult;
     @FXML
-    VBox vboxChoices;
+    private VBox vboxChoices;
 
     @FXML
     private ComboBox<Category> cbSearchCates;
